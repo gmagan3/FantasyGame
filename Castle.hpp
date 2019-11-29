@@ -4,6 +4,8 @@
 
 class Castle: public Space {
 
+    
+
 }
 
 #endif // CASTLE_HPP

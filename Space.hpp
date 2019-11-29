@@ -3,12 +3,8 @@
 
 class Space {
 
-    struct Spaces
-    {
-        Spaces *next;
-        Spaces *prev;
-        
-    }
+    public:
+    Space();
     Spaces *top;
     Spaces *bottom;
     Spaces *right;
