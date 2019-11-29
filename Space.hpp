@@ -5,16 +5,24 @@ class Space {
 
     public:
     Space();
-    struct Spaces
-    {
-        Spaces *next;
-        Spaces *prev;
-        
-    }
+    virtual runSpace();
     Spaces *top;
     Spaces *bottom;
     Spaces *right;
     Spaces *left;
+    struct Spaces
+    {
+        Character *value;
+        Spaces *next;
+        Spaces *prev;
+        Spaces(Character *a, Spaces *next1 = nullptr, Spaces *prev1 = nullptr)
+        {
+            value = a;
+            next = next1;
+            prev = prev1;
+        }
+    };
+
 }
 
 #endif // !SPACE_HPP

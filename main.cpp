@@ -2,11 +2,16 @@
 #include <stack>
 #include "string"
 #include "Space.hpp"
+#include "Adventurer.hpp"
+#include "Dungeon.hpp"
+#include "Lake.hpp"
 using std::cout;
 using std::cin;
 using std::endl;
 
 int main(){
+    Character *player;
+    player = new Adventurer;
     cout << "Welcome Adventurer to the Kingdom of Baravia!" << endl;
     cout << "There are several monsters which you must vanquish to clear the quest" << endl;
     cout << "Once you have defeated all the monsters and collected all their souls you will be crowned King!" << endl;
@@ -16,5 +21,15 @@ int main(){
     std::string potion = "potion";
     Backpack.push(potion);
     Backpack.push(potion);
+
+    cout << "You are currently in the resting room" << endl;
+    cout << "The next room is the Dungeon where the Troll resides" << endl;
+    cout << "Do you wish to enter the Dungeon?" << endl;
+
+    Space *currentSpace;
+    Space *space1 = new Dungeon;
+    space1->runSpace();
+
+
 
 }
