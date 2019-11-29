@@ -5,6 +5,12 @@ class Space {
 
     public:
     Space();
+    struct Spaces
+    {
+        Spaces *next;
+        Spaces *prev;
+        
+    }
     Spaces *top;
     Spaces *bottom;
     Spaces *right;
