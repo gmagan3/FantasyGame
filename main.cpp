@@ -58,7 +58,7 @@ int main(){
 
    currentSpace = currentSpace->right;
 
-    currentSpace->runSpace(player, monster2);
+    currentSpace->runSpace(player, monster2, Backpack);
 
     
 
