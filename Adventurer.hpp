@@ -11,19 +11,18 @@
 class Adventurer : public Character
 {
 public:
-Adventurer():Character()
+Adventurer()
 {
-    armor = 0;
     health = 100;
 }
-int attack();
-int defense(int);
+int attack(){};
+int defense(int){};
 
 
-int getArmor();
-int getHealth();
+int getArmor(){};
+int getHealth(){};
 
-int setHealth(int);
+int setHealth(int){};
 ~Adventurer(){};
 
 

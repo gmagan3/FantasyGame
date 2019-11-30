@@ -4,8 +4,13 @@
 
 class Room: public Space {
 
+public:
+Room(){
+    name = "Room";
+};
 
+~Room(){};
 
-}
+};
 
 #endif // ROOM_HPP

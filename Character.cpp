@@ -6,24 +6,20 @@
 *********************************************************************/
 #include "Character.hpp"
 
-int Character::getStrength()
+int Character::getHealth()
 {
-    return strength;
+    return health;
 }
 
-int Character::recoverStrength()
+int Character::recoverHealth()
 {
     int recover;
-    recover = 0.5 * this->strength;
-    setStrength(recover + this->getStrength());
+    recover = 0.5 * this->health;
+    setHealth(recover + this->getHealth());
 }
 
-int Character::setStrength(int s)
+int Character::setHealth(int s)
 {
-    strength = s;
+    health = s;
 }
 
-std::string Character::getType()
-{
-    return type;
-}

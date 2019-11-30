@@ -4,8 +4,13 @@
 
 class Castle: public Space {
 
-    
+public:
+Castle(){
+    name = "Castle";
+};
 
-}
+~Castle(){};
+
+};
 
 #endif // CASTLE_HPP

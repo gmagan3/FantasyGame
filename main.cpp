@@ -5,9 +5,12 @@
 #include "Adventurer.hpp"
 #include "Dungeon.hpp"
 #include "Lake.hpp"
+#include "Yard.hpp"
+#include "Room.hpp"
 using std::cout;
 using std::cin;
 using std::endl;
+using namespace std;
 
 int main(){
     Character *player;
@@ -27,8 +30,23 @@ int main(){
     cout << "Do you wish to enter the Dungeon?" << endl;
 
     Space *currentSpace;
-    Space *space1 = new Dungeon;
-    space1->runSpace();
+    Space *space1 = new Room;
+    Space *space2 = new Dungeon;
+    Space *space3 = new Lake;
+    Space *space4 = new Yard;
+
+    space1->right = space2;
+    space1->left = nullptr;
+    space2->left = space1;
+    space2->right = space3;
+
+    currentSpace = space1;
+
+    cout << currentSpace->getName() << endl;
+    currentSpace = currentSpace->right;
+    cout << currentSpace->getName() << endl;
+
+
 
 
 

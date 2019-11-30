@@ -4,8 +4,13 @@
 
 class Yard: public Space {
 
-    
+public:
+Yard(){
+    name = "Yard";
+};
 
-}
+~Yard(){};
+
+};
 
 #endif // YARD_HPP

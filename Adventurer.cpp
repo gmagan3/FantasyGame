@@ -45,16 +45,16 @@ int Adventurer::defense(int roll)
     }
 
     //The strength of the Adventurer is updated with the given attack damage
-    int total = getStrength() - result;
+    int total = getHealth() - result;
 
     //The strength is now updated in the class
-    setStrength(total);
+    setHealth(total);
     return total;
 }
 
 int Adventurer::getArmor()
 {
-    return this->armor;
+    return this->health;
 }
 
 int Adventurer::getHealth()

@@ -14,10 +14,10 @@ public:
     Character(){};
     virtual int attack() {};
     virtual int defense(int) {};
-    virtual int getStrength();
-    virtual int recoverStrength();
-    virtual int setStrength(int);
-    virtual std::string getType();
+    virtual int getHealth(){};
+    virtual int recoverHealth(){};
+    virtual int setHealth(int){};
+    virtual std::string getType(){};
 
     virtual ~Character(){};
 
@@ -25,5 +25,6 @@ public:
 
 private:
 protected:
-int armor;
+int health;
+};
 #endif // CHARACTER_HPP

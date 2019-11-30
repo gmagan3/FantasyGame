@@ -1,9 +1,4 @@
 #include "Space.hpp"
 #include <iostream>
+#include <string>
 
-Space::Space(){
-    top = nullptr;
-    bottom = nullptr;
-    right = nullptr;
-    left = nullptr;
-}

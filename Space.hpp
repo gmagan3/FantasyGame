@@ -1,28 +1,32 @@
 #ifndef SPACE_HPP
 #define SPACE_HPP
+#include "Character.hpp"
+#include <string>
 
 class Space {
 
     public:
-    Space();
-    virtual runSpace();
-    Spaces *top;
-    Spaces *bottom;
-    Spaces *right;
-    Spaces *left;
-    struct Spaces
+    Space()
     {
-        Character *value;
-        Spaces *next;
-        Spaces *prev;
-        Spaces(Character *a, Spaces *next1 = nullptr, Spaces *prev1 = nullptr)
-        {
-            value = a;
-            next = next1;
-            prev = prev1;
-        }
+    top = nullptr;
+    bottom = nullptr;
+    right = nullptr;
+    left = nullptr;
     };
+    virtual void runSpace(Character *){};
+    virtual std::string getName()
+    {
+        return this->name;
+    }
+    Space *top;
+    Space *bottom;
+    Space *right;
+    Space *left;
+    virtual ~Space(){};
 
-}
+    protected:
+    std::string name;
+
+};
 
 #endif // !SPACE_HPP

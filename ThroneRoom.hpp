@@ -4,7 +4,10 @@
 
 class Throne: public Space {
 
-    
+public:
+Throne(){};
+
+~Throne(){};  
 
 }
 

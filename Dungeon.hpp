@@ -6,14 +6,11 @@
 
 class Dungeon: public Space {
 public:
-Dungeon()
-{
-    Dungeon* dungeons;
-    Lake *lakes;
-    dungeons->right = lakes;
-}
-void runSpace(Character *);
-
-}
+Dungeon(){
+    name = "Dungeon";
+};
+void runSpace(Character *){};
+~Dungeon(){}
+};
 
 #endif // DUNGEON_HPP
