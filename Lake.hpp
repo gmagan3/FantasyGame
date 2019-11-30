@@ -3,7 +3,13 @@
 #include "Space.hpp"
 
 class Lake: public Space {
+public:
+Lake():Space()
+{
 
+}
+
+~Lake(){}
 };
 
 #endif // LAKE_HPP

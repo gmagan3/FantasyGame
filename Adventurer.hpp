@@ -11,17 +11,17 @@
 class Adventurer : public Character
 {
 public:
-Adventurer()
+Adventurer():Character()
 {
     health = 100;
 }
-int attack(){};
-int defense(int){};
+int attack();
+int defense(int);
 
 
-int getHealth(){};
+int getHealth();
 
-int setHealth(int){};
+int setHealth(int);
 ~Adventurer(){};
 
 

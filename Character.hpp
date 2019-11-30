@@ -12,12 +12,12 @@ class Character
 {
 public:
     Character(){};
-    virtual int attack() {};
-    virtual int defense(int) {};
-    virtual int getHealth(){};
-    virtual int recoverHealth(){};
-    virtual int setHealth(int){};
-    virtual std::string getType(){};
+    virtual int attack(){};
+    virtual int defense(int){};
+    int getHealth();
+    int recoverHealth();
+    int setHealth(int);
+    std::string getType();
 
     virtual ~Character(){};
 

@@ -6,7 +6,7 @@
 
 class Dungeon: public Space {
 public:
-Dungeon(){
+Dungeon():Space(){
     name = "Dungeon";
 };
 ~Dungeon(){}

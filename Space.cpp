@@ -25,9 +25,9 @@ void Space::runSpace(Character *p, Character *m)
         cin >> decision;
         if(decision == 1)
         {
-            p->attack(m->defense());
+            m->defense(p->attack());
             cout << p->getHealth() << endl;
-            m->attack(p->defense());
+            p->defense(m->attack());
         }
         }
     }

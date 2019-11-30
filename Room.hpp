@@ -5,7 +5,7 @@
 class Room: public Space {
 
 public:
-Room(){
+Room():Space(){
     name = "Room";
 };
 

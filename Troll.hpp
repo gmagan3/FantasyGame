@@ -15,13 +15,13 @@ Troll():Character()
 {
     health = 200;
 }
-int attack(){};
-int defense(int){};
+int attack();
+int defense(int);
 
 
-int getHealth(){};
+int getHealth();
 
-int setHealth(int){};
+int setHealth(int);
 ~Troll(){};
 
 

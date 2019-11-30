@@ -5,7 +5,7 @@
 class Yard: public Space {
 
 public:
-Yard(){
+Yard():Space(){
     name = "Yard";
 };
 

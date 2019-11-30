@@ -45,7 +45,6 @@ int main(){
     Character *monster3 = new Dragon;
 
     space1->right = space2;
-    space1->left = nullptr;
     space2->left = space1;
     space2->right = space3;
     space3->left = space2;
@@ -53,11 +52,13 @@ int main(){
     space4->left= space3;
     space4->right = space5;
     space5->left = space4;
-    space5->right = nullptr;
+
 
     currentSpace = space1;
 
-    currentSpace->runSpace(player, monster1);
+   currentSpace = currentSpace->right;
+
+    currentSpace->runSpace(player, monster2);
 
     
 
