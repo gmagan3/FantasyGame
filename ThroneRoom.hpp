@@ -9,6 +9,6 @@ Throne(){};
 
 ~Throne(){};  
 
-}
+};
 
 #endif // THRONE_HPP

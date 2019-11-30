@@ -9,7 +9,6 @@ public:
 Dungeon(){
     name = "Dungeon";
 };
-void runSpace(Character *){};
 ~Dungeon(){}
 };
 

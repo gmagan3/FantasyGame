@@ -31,7 +31,7 @@ int Dragon::attack()
     return attack;
 }
 /*********************************************************************
-** The defense function below overrides the virtual function from the Character class. As a parameter it takes in an integer parameter which is the attack roll. It randomly rolls 2 six sided dice to calculate the defense roll. It then subtracts the attack roll from the defense roll and armor to calculate the damage. It then outputs the result and updates the strength subtracting the damage.
+** The defense function below overrides the virtual function from the Character class. As a parameter it takes in an integer parameter which is the attack roll. It randomly rolls 2 six sided dice to calculate the defense roll. It then subtracts the attack roll from the defense roll and armor to calculate the damage. It then outputs the result and updates the health subtracting the damage.
 *********************************************************************/
 int Dragon::defense(int roll)
 {
@@ -42,27 +42,23 @@ int Dragon::defense(int roll)
 
     //Subtracts the attack given as parameter from the roll defense 
     //and the armor of the Dragon
-    int result = roll - rollDefense - getArmor();
+    int result = roll - rollDefense;
     //If the attack deals a negative number the attack is set to 0
     if(result < 0)
     {
         result = 0;
     }
 
-    //The strength of the Dragon is updated with the given attack damage
-    int total = getStrength() - result;
+    //The health of the Dragon is updated with the given attack damage
+    int total = getHealth() - result;
 
-    //The strength is now updated in the class
-    setStrength(total);
+    //The health is now updated in the class
+    setHealth(total);
     return total;
 }
 
-int Dragon::getArmor()
-{
-    return this->armor;
-}
 
-int Dragon::getStrength()
+int Dragon::getHealth()
 {
     return this->health;
 }

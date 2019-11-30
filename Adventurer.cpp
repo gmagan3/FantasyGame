@@ -26,7 +26,7 @@ int Adventurer::attack()
     return attack;
 }
 /*********************************************************************
-** The defense function below overrides the virtual function from the Character class. As a parameter it takes in an integer parameter which is the attack roll. It randomly rolls 2 six sided dice to calculate the defense roll. It then subtracts the attack roll from the defense roll and armor to calculate the damage. It then outputs the result and updates the strength subtracting the damage.
+** The defense function below overrides the virtual function from the Character class. As a parameter it takes in an integer parameter which is the attack roll. It randomly rolls 2 six sided dice to calculate the defense roll. It then subtracts the attack roll from the defense roll and armor to calculate the damage. It then outputs the result and updates the health subtracting the damage.
 *********************************************************************/
 int Adventurer::defense(int roll)
 {
@@ -37,25 +37,22 @@ int Adventurer::defense(int roll)
 
     //Subtracts the attack given as parameter from the roll defense 
     //and the armor of the Adventurer
-    int result = roll - rollDefense - getArmor();
+    int result = roll - rollDefense;
     //If the attack deals a negative number the attack is set to 0
     if(result < 0)
     {
         result = 0;
     }
 
-    //The strength of the Adventurer is updated with the given attack damage
+    //The health of the Adventurer is updated with the given attack damage
     int total = getHealth() - result;
 
-    //The strength is now updated in the class
+    //The health is now updated in the class
     setHealth(total);
     return total;
 }
 
-int Adventurer::getArmor()
-{
-    return this->health;
-}
+
 
 int Adventurer::getHealth()
 {

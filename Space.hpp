@@ -2,6 +2,7 @@
 #define SPACE_HPP
 #include "Character.hpp"
 #include <string>
+using namespace std;
 
 class Space {
 
@@ -13,7 +14,7 @@ class Space {
     right = nullptr;
     left = nullptr;
     };
-    virtual void runSpace(Character *){};
+    virtual void runSpace(Character *p, Character *m)
     virtual std::string getName()
     {
         return this->name;

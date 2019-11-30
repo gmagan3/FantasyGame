@@ -7,6 +7,10 @@
 #include "Lake.hpp"
 #include "Yard.hpp"
 #include "Room.hpp"
+#include "Troll.hpp"
+#include "Dragon.hpp"
+#include "Hydra.hpp"
+#include "ThroneRoom.hpp"
 using std::cout;
 using std::cin;
 using std::endl;
@@ -34,17 +38,28 @@ int main(){
     Space *space2 = new Dungeon;
     Space *space3 = new Lake;
     Space *space4 = new Yard;
+    Space *space5 = new Throne;
+
+    Character *monster1 = new Troll;
+    Character *monster2 = new Hydra;
+    Character *monster3 = new Dragon;
 
     space1->right = space2;
     space1->left = nullptr;
     space2->left = space1;
     space2->right = space3;
+    space3->left = space2;
+    space3->right = space4;
+    space4->left= space3;
+    space4->right = space5;
+    space5->left = space4;
+    space5->right = nullptr;
 
     currentSpace = space1;
 
-    cout << currentSpace->getName() << endl;
-    currentSpace = currentSpace->right;
-    cout << currentSpace->getName() << endl;
+    currentSpace->runSpace(player, monster1);
+
+    
 
 
 
