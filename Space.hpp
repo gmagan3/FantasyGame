@@ -2,7 +2,7 @@
 #define SPACE_HPP
 #include "Character.hpp"
 #include <string>
-#include <stack>
+#include <deque>
 using namespace std;
 
 class Space {
@@ -19,7 +19,7 @@ class Space {
     right = nullptr;
     left = nullptr;
     };
-    virtual void runSpace(Character *p, Character *m, std::stack <std::string> &);
+    virtual int runSpace(Character *p, Character *m, std::deque <std::string> &);
     virtual std::string getName()
     {
         return this->name;

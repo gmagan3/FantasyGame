@@ -1,11 +1,13 @@
 #include "Space.hpp"
 #include <iostream>
 #include <string>
-#include <stack>
+#include <algorithm>
+#include <deque>
 using namespace std;
 
-void Space::runSpace(Character *p, Character *m, std::stack <std::string> &B)
+int Space::runSpace(Character *p, Character *m, std::deque <std::string> &B)
 {
+    int final;
     cout << "You have just entered into the" << this->getName() << endl;
     cout << "In the haze of the dungeon, you have encountered a Troll!" << endl;
     int choice;
@@ -22,25 +24,48 @@ void Space::runSpace(Character *p, Character *m, std::stack <std::string> &B)
         {
         cout << "1. Attack" << endl;
         cout << "2. Use health potion" << endl;
-        cout << "3. Run" << endl;
         cin >> decision;
         if(decision == 1)
         {
             m->defense(p->attack());
             cout << p->getHealth() << endl;
             p->defense(m->attack());
+            if(p->getHealth() < 1)
+            {
+                cout << "Oh no! You have died!" << endl;
+                final = 1;
+            }
+            if(m->getHealth() < 1)
+            {
+                cout << "Congrats! You have defeated the" << this->getName() << endl;
+                cout << "Your health will be reset to 100" << endl;
+                final = 2;
+                p->setHealth(100);
+                cout << "You have gained the " << this->getName() << "'s key!" << endl;
+                std::string key1 = "key1";
+                B.push_back(key1);
+                int i = 6;
+                if(B.size() > i)
+                {
+                    cout << "Although the defeated monster yielded a health potion your bag is too small to hold it." << endl;
+                }
+                else
+                {
+                    B.push_back("potion");
+                }
+                loop = 2;
+            }
+
+            
         }
         if(decision == 2)
         {
-        std::string item;
-        std::stack<std::string>b1;
-        b1 = B;
         int loop = 1;
-        while(!b1.empty() && loop == 1)
+        while(loop == 1)
         {
-            if(b1.top() == "potion")
+            if(std::find(B.begin(), B.end(), "potion")!= B.end())
             {
-                B.pop();
+                B.pop_front();
                 if(p->getHealth() == 100)
                 {
                     cout << "Potion has been used but you are at max health!" << endl;
@@ -59,13 +84,19 @@ void Space::runSpace(Character *p, Character *m, std::stack <std::string> &B)
                     loop = 2;
                 }       
             }
-            b1.pop();
+            else
+            {
+                cout << "You do not have any more potions left!!" << endl;
+                loop = 2;
+            }
         }
 
         }
         }
+
+        
     }
 
 
-   
+   return final;
 }

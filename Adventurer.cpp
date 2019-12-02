@@ -19,8 +19,8 @@ using std::endl;
 int Adventurer::attack()
 {
     //Randomly rolls two six sided dice and adds the result
-    int random = rand() % 6 + 1;
-    int random1 = rand() % 6 + 1;
+    int random = rand() % 10 + 1;
+    int random1 = rand() % 10 + 1;
     int attack = random + random1;
     //It outputs the random roll as the attack and returns the value
     return attack;
