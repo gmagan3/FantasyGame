@@ -5,7 +5,9 @@
 class Throne: public Space {
 
 public:
-Throne():Space(){};
+Throne():Space(){
+    name = "Throne Room";
+};
 
 ~Throne(){};  
 

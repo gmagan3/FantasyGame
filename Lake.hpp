@@ -6,7 +6,7 @@ class Lake: public Space {
 public:
 Lake():Space()
 {
-
+    name = "Lake";
 }
 
 ~Lake(){}

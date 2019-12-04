@@ -28,8 +28,9 @@ int Space::runSpace(Character *p, Character *m, std::deque <std::string> &B)
         if(decision == 1)
         {
             m->defense(p->attack());
-            cout << p->getHealth() << endl;
+            cout << "Player Health: " << p->getHealth() << endl;
             p->defense(m->attack());
+            cout << "Troll Health: " << m->getHealth() << endl;
             if(p->getHealth() < 1)
             {
                 cout << "Oh no! You have died!" << endl;

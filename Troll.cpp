@@ -36,8 +36,8 @@ int Troll::attack()
 int Troll::defense(int roll)
 {
     //Randomly rolls two six sided dice and adds the result
-    int random2 = rand() % 6 + 1;
-    int random3 = rand() % 6 + 1;
+    int random2 = rand() % 10 + 1;
+    int random3 = rand() % 10 + 1;
     int rollDefense = random2 + random3;
 
     //Subtracts the attack given as parameter from the roll defense 

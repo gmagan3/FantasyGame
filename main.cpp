@@ -90,7 +90,6 @@ int main(){
     delete space3;
     delete space4;
     delete space5;
-    delete space6;
 
     delete monster1;
     delete monster2;
