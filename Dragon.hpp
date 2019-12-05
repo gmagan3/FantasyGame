@@ -13,7 +13,8 @@ class Dragon : public Character
 public:
 Dragon():Character()
 {
-    health = 200;
+    health = 250;
+    name = "Dragon";
 }
 int attack();
 int defense(int);

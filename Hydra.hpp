@@ -13,7 +13,8 @@ class Hydra : public Character
 public:
 Hydra():Character()
 {
-    health = 200;
+    health = 300;
+    name = "Hydra";
 }
 int attack();
 int defense(int);

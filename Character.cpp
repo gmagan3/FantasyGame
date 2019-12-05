@@ -23,3 +23,8 @@ int Character::setHealth(int s)
     health = s;
 }
 
+std::string Character::getName()
+{
+    return name;
+}
+

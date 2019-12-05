@@ -7,6 +7,7 @@
 #ifndef CHARACTER_HPP
 #define CHARACTER_HPP
 #include <iostream>
+#include <string>
 
 class Character
 {
@@ -18,6 +19,7 @@ public:
     int recoverHealth();
     int setHealth(int);
     std::string getType();
+    std::string getName();
 
     virtual ~Character(){};
 
@@ -26,5 +28,7 @@ public:
 private:
 protected:
 int health;
+std::string name;
+
 };
 #endif // CHARACTER_HPP

@@ -1,5 +1,5 @@
-output: main.o Character.o Adventurer.o Castle.o Dragon.o Dungeon.o Hydra.o Lake.o Room.o Space.o ThroneRoom.o Troll.o Yard.o 
-	g++ -std=c++11 main.o Character.o Adventurer.o Castle.o Dragon.o Dungeon.o Hydra.o Lake.o Room.o Space.o ThroneRoom.o Troll.o Yard.o  -o output
+output: main.o Character.o Adventurer.o Castle.o Dragon.o Dungeon.o Hydra.o Lake.o Room.o Space.o ThroneRoom.o Troll.o Yard.o Marsh.o Chimera.o
+	g++ -std=c++11 main.o Character.o Adventurer.o Castle.o Dragon.o Dungeon.o Hydra.o Lake.o Room.o Space.o ThroneRoom.o Troll.o Yard.o Marsh.o Chimera.o -o output
 	
 main.o: main.cpp
 	g++ -std=c++11 -c main.cpp
@@ -21,6 +21,12 @@ Dungeon.o: Dungeon.cpp Dungeon.hpp
 
 Hydra.o: Hydra.cpp Hydra.hpp
 	g++ -std=c++11 -c Hydra.cpp
+
+Chimera.o: Chimera.cpp Chimera.hpp
+	g++ -std=c++11 -c Chimera.cpp
+
+Marsh.o: Marsh.cpp Marsh.hpp
+	g++ -std=c++11 -c Marsh.cpp
 
 Lake.o: Lake.cpp Lake.hpp
 	g++ -std=c++11 -c Lake.cpp

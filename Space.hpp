@@ -12,6 +12,7 @@ class Space {
     Space *bottom;
     Space *right;
     Space *left;
+    int inputValidation(int choice);
     Space()
     {
     top = nullptr;
@@ -28,6 +29,7 @@ class Space {
 
     protected:
     std::string name;
+    int choice;
 
 };
 
