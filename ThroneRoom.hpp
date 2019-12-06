@@ -9,6 +9,8 @@ Throne():Space(){
     name = "Throne Room";
 };
 
+int runSpace(Character *p, std::deque <std::string> &);
+
 ~Throne(){};  
 
 };

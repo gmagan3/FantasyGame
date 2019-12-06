@@ -9,7 +9,7 @@
 #include "Yard.hpp"
 #include "Room.hpp"
 #include "Marsh.hpp"
-#include "Chimera.cpp"
+#include "Chimera.hpp"
 #include "Troll.hpp"
 #include "Dragon.hpp"
 #include "Hydra.hpp"
@@ -68,7 +68,7 @@ int main(){
     Space *space3 = new Lake;
     Space *space4 = new Yard;
     Space *space5 = new Marsh;
-    Space *space6 = new Throne
+    Space *space6 = new Throne;
 
     Character *monster1 = new Troll;
     Character *monster2 = new Hydra;
@@ -84,7 +84,7 @@ int main(){
     space4->right = space5;
     space5->left = space4;
     space5->right = space6;
-    space6->left = space5
+    space6->left = space5;
 
 
     currentSpace = space1;
@@ -159,7 +159,7 @@ int main(){
     delete monster1;
     delete monster2;
     delete monster3;
-    delete monster4
+    delete monster4;
 
 
 

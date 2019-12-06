@@ -29,6 +29,7 @@ int Space::runSpace(Character *p, Character *m, std::deque <std::string> &B)
             {
                 cout << "Oh no! You have died!" << endl;
                 final = 1;
+                return 0;
             }
             if(m->getHealth() < 1)
             {
