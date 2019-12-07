@@ -37,7 +37,7 @@ int Space::runSpace(Character *p, Character *m, std::deque <std::string> &B)
             {
                 cout << "Oh no! You have died!" << endl;
                 final = 1;
-                return 0;
+                loop = 2;
             }
             if(m->getHealth() < 1)
             {
@@ -70,8 +70,6 @@ int Space::runSpace(Character *p, Character *m, std::deque <std::string> &B)
         }
         if(decision == 2)
         {
-        p->defense(m->attack());
-        cout << p->getName() << " Health: " << p->getHealth() << endl;
         int loop = 1;
         while(loop == 1)
         {
@@ -96,6 +94,7 @@ int Space::runSpace(Character *p, Character *m, std::deque <std::string> &B)
                     //Adds 20 health to the player 
                     cout << "Potion has now been used" << endl;
                     p->setHealth(p->getHealth()+20);
+                    cout << "Player health now: " << p->getHealth() << endl;
                     loop = 2;
                 }       
             }
@@ -105,7 +104,6 @@ int Space::runSpace(Character *p, Character *m, std::deque <std::string> &B)
                 loop = 2;
             }
         }
-
         }
         }
 

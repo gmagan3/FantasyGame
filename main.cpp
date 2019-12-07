@@ -169,12 +169,6 @@ int main(){
     }
     currentSpace = currentSpace->right;
 
-    
-
-    
-
-    
-
     //Frees the memory allocated by the previous objects with the game over
     delete player;
     delete space1;
@@ -188,9 +182,6 @@ int main(){
     delete monster2;
     delete monster3;
     delete monster4;
-
-
-
 
 return 0;
 

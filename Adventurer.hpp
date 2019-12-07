@@ -13,7 +13,7 @@ class Adventurer : public Character
 public:
 Adventurer():Character()
 {
-    health = 75;
+    health = 100;
 }
 int attack();
 int defense(int);

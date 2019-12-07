@@ -13,7 +13,7 @@ class Chimera : public Character
 public:
 Chimera():Character()
 {
-    health = 300;
+    health = 200;
     name = "Chimera";
 }
 int attack();

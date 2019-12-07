@@ -19,8 +19,8 @@ using std::endl;
 int Hydra::attack()
 {
     //Randomly rolls two six sided dice and adds the result
-    int random = rand() % 6 + 1;
-    int random1 = rand() % 6 + 1;
+    int random = rand() % 20 + 1;
+    int random1 = rand() % 20 + 1;
     int attack = random + random1;
     if(13 > attack > 9)
     {

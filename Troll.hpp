@@ -13,7 +13,7 @@ class Troll : public Character
 public:
 Troll():Character()
 {
-    health = 100;
+    health = 120;
     name = "Troll";
 }
 int attack();
