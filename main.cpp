@@ -1,3 +1,9 @@
+/*********************************************************************
+** Program name: Final Project
+** Author: Guleid Magan
+** Date: December 10th, 2019
+** Description: This is the main cpp file. It creates the charcter objects for the monsters and the player. It then creates the objects for the various spaces. It then moves the player through each space if the player is able to defeat the monster within that space until all monsters have been defeated.
+*********************************************************************/
 #include <iostream>
 #include <stack>
 #include <deque>

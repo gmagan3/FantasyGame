@@ -4,6 +4,12 @@
 ** Date: November 10th, 2019
 ** Description: This is the Dragon class which inherits from the Character class. It sets the default values for the amor and health specific to the Dragon. It also overrides the attack and defense functions along with get and setter methods.
 *********************************************************************/
+/*********************************************************************
+** Program name: Final Project
+** Author: Guleid Magan
+** Date: December 10th, 2019
+** Description: This is the Dragon class which inherits from the Character class. It sets the default values for the health specific to the Dragon. It also overrides the attack and defense functions along with get and setter methods.
+*********************************************************************/
 #ifndef Dragon_HPP
 #define Dragon_HPP
 #include "Character.hpp"

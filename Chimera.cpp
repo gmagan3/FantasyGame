@@ -14,7 +14,7 @@ using std::cout;
 using std::endl;
 
 /*********************************************************************
-** The attack function below overrides the virtual function from the Character class. It randomly rolls 2 six sided dice and then return the sum of the rolls as the attack roll.
+** The attack function below overrides the virtual function from the Character class. It randomly rolls one die with 20 sides and the other 25 and then return the sum of the rolls as the attack roll.
 *********************************************************************/
 int Chimera::attack()
 {

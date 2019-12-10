@@ -1,9 +1,19 @@
+/*********************************************************************
+** Program name: Final Project
+** Author: Guleid Magan
+** Date: December 10th, 2019
+** Description: This is the Space class which is the parent class for several derived classes. It contains the input Validation function and the runSpace logic which runs the logic for each space which is passed down to the derived classes. 
+*********************************************************************/
+
+
 #ifndef SPACE_HPP
 #define SPACE_HPP
 #include "Character.hpp"
 #include <string>
 #include <deque>
-using namespace std;
+using std::cout;
+using std::cin;
+using std::endl;
 
 class Space {
 

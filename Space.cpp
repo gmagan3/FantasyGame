@@ -1,3 +1,10 @@
+/*********************************************************************
+** Program name: Final Project
+** Author: Guleid Magan
+** Date: December 10th, 2019
+** Description: This is the Space class which is the parent class for several derived classes. It contains the input Validation function and the runSpace logic which runs the logic for each space which is passed down to the derived classes. 
+*********************************************************************/
+
 #include "Space.hpp"
 #include <iostream>
 #include <string>

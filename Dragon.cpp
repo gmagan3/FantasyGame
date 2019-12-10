@@ -1,8 +1,8 @@
 /*********************************************************************
-** Program name: Project 3
+** Program name: Final Project
 ** Author: Guleid Magan
 ** Date: November 10th, 2019
-** Description: This is the Dragon class which inherits from the Character class. It randomly rolls 2 six sided dice for both the attack and defense method. It also overrides the attack and defense functions along with get and setter methods.
+** Description: This is the Dragon class which inherits from the Character class. It also overrides the attack and defense functions along with get and setter methods.
 *********************************************************************/
 
 #include "Dragon.hpp"
@@ -14,7 +14,7 @@ using std::cout;
 using std::endl;
 
 /*********************************************************************
-** The attack function below overrides the virtual function from the Character class. It randomly rolls 2 six sided dice and then return the sum of the rolls as the attack roll.
+** The attack function below overrides the virtual function from the Character class. It randomly rolls 1 30 sided dice and 1 10 sided and then return the sum of the rolls as the attack roll.
 *********************************************************************/
 int Dragon::attack()
 {
