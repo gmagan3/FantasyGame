@@ -46,5 +46,7 @@ Troll.o: Troll.cpp Troll.hpp
 Yard.o: Yard.cpp Yard.hpp
 	g++ -std=c++11 -c Yard.cpp
 
+zip:
+	zip -D FinalProject_Magan_Guleid.zip Adventurer.cpp Adventurer.hpp Character.hpp Character.cpp Castle.hpp Castle.cpp Chimera.cpp Chimera.hpp Dragon.hpp Dragon.cpp Dungeon.hpp Dungeon.cpp Hydra.cpp Hydra.hpp Marsh.cpp Marsh.hpp Lake.hpp Lake.cpp Room.cpp Room.hpp Space.hpp Space.cpp ThroneRoom.hpp ThroneRoom.cpp Troll.hpp Troll.cpp Yard.cpp Yard.hpp FinalProject.pdf main.cpp makefile 
 clean:
 	rm *.o output

@@ -19,14 +19,9 @@ using std::endl;
 int Hydra::attack()
 {
     //Randomly rolls two six sided dice and adds the result
-    int random = rand() % 20 + 1;
-    int random1 = rand() % 20 + 1;
-    int attack = random + random1;
-    if(13 > attack > 9)
-    {
-        attack = attack + 3;
-        cout << "Extra fire damage of 3 has occured." << endl;
-    }
+    int random = rand() % 30 + 1;
+    int attack = random;
+
     //It outputs the random roll as the attack and returns the value
     return attack;
 }
