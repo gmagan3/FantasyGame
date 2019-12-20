@@ -1,5 +1,4 @@
 # FantasyGame
-Final project for CS 162
 
 Game concept: Fantasy Adventure Game. Obtain all the keys!
 
